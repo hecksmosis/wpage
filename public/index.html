@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Totally normal webpage</title>
+    <style>
+        .main-body {
+            font-size: 60pt;
+        }
+        
+        .username {
+            font-size: 22pt;
+            font-weight: bold;
+            color: red;
+        }
+        
+        .password {
+            font-size: 20pt;
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/public/js/main.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <label for="nameForm">Enter your username here:</label> <br/>
+        <input type="text" name="Username" id="nameForm"> <br/>
+        <label for="passwd">Enter your password here:</label> <br/>
+        <input type="text" name="Password" id="passwd"> <br/>
+        <button id="newUser">Sign In</button>
+        <button id="existingUser">Log In</button>
+    </div>
+</body>
+
+</html>
